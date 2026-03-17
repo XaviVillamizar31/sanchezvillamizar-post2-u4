@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#1f2937,#111827);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    width:380px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* CAMPOS */
+
+.campo-grupo{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:18px;
+}
+
+label{
+    font-size:14px;
+    margin-bottom:6px;
+}
+
+input{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:14px;
+    transition:0.2s;
+}
+
+input:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+/* ESTADOS */
+
+.valido{
+    border:2px solid #16a34a;
+}
+
+.invalido{
+    border:2px solid #dc2626;
+}
+
+/* MENSAJES */
+
+.msg-error{
+    font-size:12px;
+    color:#dc2626;
+    margin-top:4px;
+    display:none;
+}
+
+.msg-error.visible{
+    display:block;
+}
+
+/* BOTON */
+
+.btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* MENSAJE DE EXITO */
+
+.mensaje-exito{
+    margin-top:20px;
+    padding:12px;
+    border-radius:6px;
+    background:#dcfce7;
+    color:#166534;
+    text-align:center;
+    font-size:14px;
+}
+
+/* OCULTO */
+
+.oculto{
+    display:none;
+}
